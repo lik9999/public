@@ -1,0 +1,12 @@
+name: test-pipeline-base
+
+on:
+  push:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo
+      run: echo "hello likun push."
